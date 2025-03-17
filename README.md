@@ -779,7 +779,7 @@ Anycast позволяет оптимизировать маршрутизаци
 
 ## 5. Логическая схема БД <a name="логическая-схема-бд"></a>
 
-Полную версию бд можно посмотреть по ссылке [https://www.drawdb.app/editor?shareId=86e884a95f07b6c54e7cde1be41e9474](https://www.drawdb.app/editor?shareId=86e884a95f07b6c54e7cde1be41e9474)
+Полную версию схемы бд можно посмотреть по ссылке [https://www.drawdb.app/editor?shareId=bb55c722dd7178259de6a0d6dae28be4](https://www.drawdb.app/editor?shareId=bb55c722dd7178259de6a0d6dae28be4)
 
 Либо на изображении и приближенных фрагментах, указанных ниже:
 
@@ -791,7 +791,7 @@ Anycast позволяет оптимизировать маршрутизаци
 
 *Пользователь:*
 
-![img_1.png](img%2F5%2Fimg_1.png)
+![img_1.png](img%2F5%2Fimg_1.png) 
 
 *Сессия:*
 
