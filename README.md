@@ -1664,19 +1664,19 @@ URL: [https://www.drawdb.app/editor?shareId=b53cf5f4253d7b82c51b3d435ac52a20](ht
 
 Схему ci/cd можно посмотреть по этой ссылке: [https://draft.io/xf92qudd3v49jurncg2ynqrez3fprnwmbegtnd62m7pd](https://draft.io/xf92qudd3v49jurncg2ynqrez3fprnwmbegtnd62m7pd)
 
-![ci_cd ozon.png](img%2F10%2Fci_cd%20ozon.png)
+![ci_cd ozon.png](img%2F10%2Fimg_1.png)
 
 Схему проекта без сбора логов и метрик можно посмотреть по этой ссылке: [https://draft.io/vg5t2xtmnahttjma2yhg8ea5y3u8djtcqkkuf4nf7fdy](https://draft.io/vg5t2xtmnahttjma2yhg8ea5y3u8djtcqkkuf4nf7fdy)
 
-![ozon without logs and metrics.png](img%2F10%2Fozon%20without%20logs%20and%20metrics.png)
+![ozon without logs and metrics.png](img%2F10%2Fimg_2.png)
 
 Схему фронтенда можно посмотреть по ссылке: [https://draft.io/87446tjyseaauqazdrku2f29f2y4h3dxwcwxj8h7fz7u](https://draft.io/87446tjyseaauqazdrku2f29f2y4h3dxwcwxj8h7fz7u)
 
-![Frontend SSR Server.png](img%2F10%2FFrontend%20SSR%20Server.png)
+![Frontend SSR Server.png](img%2F10%2Fimg.png)
 
 Основную схему проекта со сбором логов и метрик можно посмотреть по ссылке: [https://draft.io/qpezn93ekwybh98xdmy4x65qq6xurzae8eyfn5uaasys](https://draft.io/qpezn93ekwybh98xdmy4x65qq6xurzae8eyfn5uaasys)
 
-![ozon.png](img%2F10%2Fozon.png)
+![ozon.png](img%2F10%2Fimg_3.png)
 
 ---
 
