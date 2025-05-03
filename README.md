@@ -1946,49 +1946,121 @@ URL: [https://www.drawdb.app/editor?shareId=b53cf5f4253d7b82c51b3d435ac52a20](ht
         - 5 узлов * 6 ДЦ = **30 машин**.
         - **Конфигурация**: 16 ядер, 64 ГБ RAM, 1TB SSD.
 
+### Расчет цен
+
+На selectel [^35]
+
+**Kubernetes-ноды**
+
+![img.png](img%2F11%2Fimg.png)
+
+Если учесть количество, то цена будет примерно 8,8 млн. руб. в месяц
+
+**Nginx**
+
+![img_1.png](img%2F11%2Fimg_1.png)
+
+Если учесть количество, то цена будет примерно 2,1 млн. руб. в месяц
+
+**Kafka**
+
+![img_2.png](img%2F11%2Fimg_2.png)
+
+Если учесть количество, то цена будет примерно 3,3 млн. руб. в месяц
+
+**PostgreSQL**
+
+![img_2.png](img%2F11%2Fimg_2.png)
+
+Если учесть количество, то цена будет примерно 5,1 млн. руб. в месяц
+
+**Redis**
+
+![img_5.png](img%2F11%2Fimg_5.png)
+
+Если учесть количество, то цена будет примерно 1,8 млн. руб. в месяц на фронтенд и столько же на бекенд
+
+**ClickHouse**
+
+![img_4.png](img%2F11%2Fimg_4.png)
+
+Если учесть количество, то цена будет примерно 1,5 млн. руб. в месяц
+
+**Elasticsearch**
+
+![img_4.png](img%2F11%2Fimg_4.png)
+
+Если учесть количество, то цена будет примерно 1,1 млн. руб. в месяц
+
+**Splunk**
+
+![img_4.png](img%2F11%2Fimg_4.png)
+
+Если учесть количество, то цена будет примерно 1,1 млн. руб. в месяц
+
+**InfluxDB**
+
+![img_5.png](img%2F11%2Fimg_5.png)
+
+Если учесть количество, то цена будет примерно 1,1 млн. руб. в месяц
+
+**Grafana**
+
+![img_6.png](img%2F11%2Fimg_6.png)
+
+Если учесть количество, то цена будет примерно 0,4 млн. руб. в месяц
+
+**Prometheus**
+
+![img_5.png](img%2F11%2Fimg_5.png)
+
+Если учесть количество, то цена будет примерно 1,8 млн. руб. в месяц
+
+На AWS [^36]
+
+Примерно выйдет 0,7 млн. руб. в месяц за s3
+
 ### Итоговый список серверов
-| **Тип**             | **Количество** | **Конфигурация**                 | **Провайдер**   | **Стоимость (USD/мес)** |
-|---------------------|----------------|----------------------------------|-----------------|-------------------------|
-| Kubernetes-ноды     | 69             | 64 ядра, 256 ГБ RAM, 4TB NVMe    | Яндекс.Облако   | $103,500                |
-| Nginx               | 60             | 16 ядер, 32 ГБ RAM               | Яндекс.Облако   | $18,000                 |
-| Kafka               | 42             | 32 ядра, 128 ГБ RAM, 2TB SSD     | Яндекс.Облако   | $31,500                 |
-| PostgreSQL          | 65             | 32 ядра, 128 ГБ RAM, 2TB SSD     | AWS             | $65,000                 |
-| Redis (фронтенд)    | 30             | 16 ядер, 64 ГБ RAM, 1TB SSD      | AWS             | $15,000                 |
-| Redis (бэкенд)      | 30             | 16 ядер, 64 ГБ RAM, 1TB SSD      | AWS             | $15,000                 |
-| ClickHouse          | 24             | 16 ядер, 64 ГБ RAM, 2TB SSD      | AWS             | $12,000                 |
-| Elasticsearch       | 18             | 16 ядер, 64 ГБ RAM, 2TB SSD      | AWS             | $9,000                  |
-| Amazon S3 (шлюзы)   | 18             | 16 ядер, 64 ГБ RAM, 2TB SSD      | AWS             | $9,000                  |
-| Splunk              | 18             | 16 ядер, 64 ГБ RAM, 2TB SSD      | AWS             | $9,000                  |
-| InfluxDB            | 18             | 16 ядер, 64 ГБ RAM, 1TB SSD      | AWS             | $9,000                  |
-| Grafana             | 12             | 8 ядер, 16 ГБ RAM, 500GB SSD     | AWS             | $2,400                  |
-| Prometheus          | 30             | 16 ядер, 64 ГБ RAM, 1TB SSD      | AWS             | $15,000                 |
-| **Итого**           |                |                                  |                 | **$313,400**            |
+| **Тип**             | **Количество** | **Конфигурация**                 | **Провайдер** | **Стоимость (млн. руб/мес)** |
+|---------------------|----------------|----------------------------------|---------------|------------------------------|
+| Kubernetes-ноды     | 69             | 64 ядра, 256 ГБ RAM, 4TB NVMe    | selectel      | 8,8                          |
+| Nginx               | 60             | 16 ядер, 32 ГБ RAM               | selectel      | 2,1                          |
+| Kafka               | 42             | 32 ядра, 128 ГБ RAM, 2TB SSD     | selectel      | 3,3                          |
+| PostgreSQL          | 65             | 32 ядра, 128 ГБ RAM, 2TB SSD     | selectel      | 5,1                          |
+| Redis (фронтенд)    | 30             | 16 ядер, 64 ГБ RAM, 1TB SSD      | selectel      | 1,8                          |
+| Redis (бэкенд)      | 30             | 16 ядер, 64 ГБ RAM, 1TB SSD      | selectel      | 1,8                          |
+| ClickHouse          | 24             | 16 ядер, 64 ГБ RAM, 2TB SSD      | selectel      | 1,5                          |
+| Elasticsearch       | 18             | 16 ядер, 64 ГБ RAM, 2TB SSD      | selectel      | 1,1                          |
+| Amazon S3 (шлюзы)   | 18             | 16 ядер, 64 ГБ RAM, 2TB SSD      | AWS           | 0,7                          |
+| Splunk              | 18             | 16 ядер, 64 ГБ RAM, 2TB SSD      | selectel      | 1,1                          |
+| InfluxDB            | 18             | 16 ядер, 64 ГБ RAM, 1TB SSD      | selectel      | 1,1                          |
+| Grafana             | 12             | 8 ядер, 16 ГБ RAM, 500GB SSD     | selectel      | 0,4                          |
+| Prometheus          | 30             | 16 ядер, 64 ГБ RAM, 1TB SSD      | selectel      | 1,8                          |
+| **Итого**           |                |                                  |               | **30,6**                     |
 
-### Стоимость
-
-#### Сервисы на Яндекс.Облако
-- **Kubernetes-ноды**: 69 × $1,500 = $103,500
-- **Nginx**: 60 × $300 = $18,000
-- **Kafka**: 42 × $750 = $31,500
-- **Итого на Яндекс.Облако**: $103,500 + $18,000 + $31,500 = **$153,000**
+#### Сервисы на selectel
+- **Kubernetes-ноды**: 8,8 млн. руб. в месяц
+- **Nginx**: 2,1 млн. руб. в месяц
+- **Kafka**: 3,3 млн. руб. в месяц
+- **PostgreSQL**: 5,1 млн. руб. в месяц
+- **Redis (фронтенд)**: 1,8 млн. руб. в месяц
+- **Redis (бэкенд)**: 1,8 млн. руб. в месяц
+- **ClickHouse**: 1,5 млн. руб. в месяц
+- **Elasticsearch**: 1,1 млн. руб. в месяц
+- **Splunk**: 1,1 млн. руб. в месяц
+- **InfluxDB**: 1,1 млн. руб. в месяц
+- **Grafana**: 0,4 млн. руб. в месяц
+- **Prometheus**: 1,8 млн. руб. в месяц
+- **Итого на selectel**: 8,8 + 2,1 + 3,3 + 5,1 + 1,8 + 1,8 + 1,5 + 1,1 + 1,1 + 1,1 + 0,4 + 1,8 = **29,9 млн. руб. в месяц**
 
 #### Сервисы на AWS
-- **PostgreSQL**: 65 × $1,000 = $65,000
-- **Redis (фронтенд)**: 30 × $500 = $15,000
-- **Redis (бэкенд)**: 30 × $500 = $15,000
-- **ClickHouse**: 24 × $500 = $12,000
-- **Elasticsearch**: 18 × $500 = $9,000
-- **Amazon S3 (шлюзы)**: 18 × $500 = $9,000
-- **Splunk**: 18 × $500 = $9,000
-- **InfluxDB**: 18 × $500 = $9,000
-- **Grafana**: 12 × $200 = $2,400
-- **Prometheus**: 30 × $500 = $15,000
-- **Итого на AWS**: $65,000 + $15,000 + $15,000 + $12,000 + $9,000 + $9,000 + $9,000 + $9,000 + $2,400 + $15,000 = **$160,400**
+- **Amazon S3 (шлюзы)**: 18 × $500 = $9,000 = 0,7 млн. руб. в месяц
+- **Итого на AWS**: **0,7 млн. руб. в месяц**
 
 ### Общая стоимость
-- **Яндекс.Облако**: $153,000
-- **AWS**: $160,400
-- **Итого**: $153,000 + $160,400 = **$313,400**
+- **selectel**: 29,9 млн. руб. в месяц
+- **AWS**: 0,7 млн. руб. в месяц
+- **Итого**: 29,9 + 0,7 = **30,6**
 
 ---
 
@@ -2030,3 +2102,6 @@ URL: [https://www.drawdb.app/editor?shareId=b53cf5f4253d7b82c51b3d435ac52a20](ht
 [^32]: ЦОДы России: [https://alldc.ru/dcs/map/?city=33](https://alldc.ru/dcs/map/?city=33)
 [^33]: Resources | Spring Boot on GCP: [https://spring-gcp.saturnism.me/deployment/kubernetes/resources](https://spring-gcp.saturnism.me/deployment/kubernetes/resources)
 [^34]: Sizing Kubernetes pods for JVM apps without fearing the OOM Killer: [https://varoa.net/jvm/kubernetes/memory/docker/oomkiller/2019/05/29/k8s-and-java.html](https://varoa.net/jvm/kubernetes/memory/docker/oomkiller/2019/05/29/k8s-and-java.html)
+[^35]: Selectel calculator: [https://selectel.ru/services/dedicated/configurator/?c=309%3A1-52%3A4-141%3A1-77%3A1-307%3A1-160%3A1&simpleRamMode=true](https://selectel.ru/services/dedicated/configurator/?c=309%3A1-52%3A4-141%3A1-77%3A1-307%3A1-160%3A1&simpleRamMode=true)
+[^36]: AWS calculator: [https://calculator.holori.com/?currency=USD&payment_period=hour&min_price=0.00143&max_price=784.896&name=&min_cpu=0&max_cpu=896&min_ram=0&max_ram=35184372088832&min_disk=0&max_disk=360777252864000&min_gpu=0&max_gpu=16&min_internal_network_speed=0&max_internal_network_speed=214748364800&min_external_network_speed=0&max_external_network_speed=400000000000&page=1&limit=50](https://calculator.holori.com/?currency=USD&payment_period=hour&min_price=0.00143&max_price=784.896&name=&min_cpu=0&max_cpu=896&min_ram=0&max_ram=35184372088832&min_disk=0&max_disk=360777252864000&min_gpu=0&max_gpu=16&min_internal_network_speed=0&max_internal_network_speed=214748364800&min_external_network_speed=0&max_external_network_speed=400000000000&page=1&limit=50)
+
